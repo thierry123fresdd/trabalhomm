@@ -1,0 +1,70 @@
+/* Estilo geral */
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 20px;
+  transition: background 0.3s, color 0.3s;
+}
+
+/* Modo claro */
+.light-mode {
+  background: #f0f0f0;
+  color: #000;
+}
+
+/* Modo escuro */
+.dark-mode {
+  background: #1a1a1a;
+  color: #fff;
+}
+
+.quiz-container {
+  margin: auto;
+  padding: 20px;
+  max-width: 500px;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  background: inherit;
+  border: 2px solid #555;
+}
+
+button {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s ease, background 0.3s ease;
+}
+
+/* Botão alternar modo */
+#mode-toggle {
+  width: auto;
+  margin-bottom: 20px;
+  padding: 10px 20px;
+  background: #0077ff;
+  color: white;
+  border-radius: 10px;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+.correct {
+  background-color: green !important;
+  color: white;
+}
+
+.wrong {
+  background-color: red !important;
+  color: white;
+}
+
+.disabled {
+  pointer-events: none;
+  opacity: 0.6;
+}
